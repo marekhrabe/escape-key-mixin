@@ -9,7 +9,7 @@ module.exports =
   componentDidMount: ->
     callback = @onEscapeKeyPressed
     if typeof callback is 'function'
-      listeners.push callback.bind(this)
+      listeners.push callback
     else
       console.error 'You need to implement onEscapeKeyPressed when you use EscapeKeyMixin.'
 
